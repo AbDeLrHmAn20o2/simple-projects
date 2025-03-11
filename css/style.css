@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+}
+.sec_pd {
+  padding-block: 6.5rem;
+}
+body {
+  margin: 0;
+  font-family: "Alegreya", serif;
+}
+
+#home {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/coming-soon-background.jpg);
+  height: 100vh;
+  color: white;
+  overflow: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav img {
+  width: 80px;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.nav-link:hover {
+  color: #e1be64;
+}
+.navbar-nav .nav-link.active {
+  color: #e1be64;
+}
+
+.home_content p {
+  font-size: 24px;
+}
+.home_content h1 {
+  font-size: 79px;
+}
+.home_content button {
+  padding: 18px 20px;
+  border-radius: 5px;
+  border-color: transparent;
+  font-size: 16px;
+  color: white;
+  background-color: #e1be64;
+  transition: all 0.3s ease-in-out;
+}
+.home_content button.btn_contact {
+  border: 2px solid white;
+  padding: 15px 30px;
+  background-color: transparent;
+}
+.home_content button:hover {
+  background-color: white;
+  color: black;
+}
+
+.special .image img {
+  width: 90%;
+}
+.content {
+  font-size: 17px;
+  vertical-align: top;
+  text-align: left;
+  line-height: 2;
+}
+.content h2 {
+  font-size: 32px;
+  text-transform: capitalize;
+}
+
+#location .content p {
+  line-height: 2;
+  font-size: 20px;
+}
+
+#location {
+  background-color: #f8f8f8;
+}
+.wrapper {
+  text-align: center;
+}
+.wrapper img {
+  width: 100%;
+}
+.clear {
+  clear: both;
+}
+#gallery {
+  overflow: auto;
+}
+
+#contact {
+  background-color: #f8f8f8;
+}
+.special .map {
+  width: 100%;
+  height: 100%;
+}
+.special .map iframe {
+  width: 100%;
+  height: 100%;
+}
+#footer {
+  background-color: rgb(33, 37, 41);
+}
+.footer_special {
+  color: white;
+}
+
+#footer .info_container {
+  line-height: 1.5;
+}
+.info_container p {
+  font-size: 16px;
+}
+.info_container h3 {
+  font-size: 18px;
+}
+
+.info_container.bg {
+  background-image: linear-gradient(
+      rgba(33, 37, 41, 0.7),
+      rgba(33, 37, 41, 0.7)
+    ),
+    url(../images/map.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#footer .copyright {
+  text-align: center;
+  background-color: hsl(205, 14%, 10%);
+  color: white;
+}
+#footer .copyright img {
+  width: 10%;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  border: 2px solid hsl(0, 0%, 60%);
+  border-radius: 50%;
+}
+li {
+  list-style: none;
+}
+.circle i {
+  color: #e1be64;
+  font-size: 20px;
+}
+.loader {
+  width: 48px;
+  height: 78px;
+  position: relative;
+  border: 2px solid #fff;
+  margin-inline: auto;
+  border-radius: 50% 50% 50% 50% / 25% 25% 25% 25%;
+  top: 90px;
+  cursor: pointer;
+}
+.loader::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 10px;
+  animation: scrollDown 1.5s linear infinite;
+}
+@keyframes scrollDown {
+  0% {
+    top: 15px;
+    height: 4px;
+    opacity: 1;
+  }
+  33% {
+    top: 15px;
+    height: 40px;
+  }
+  66% {
+    top: 50px;
+    height: 10px;
+    opacity: 1;
+  }
+  100% {
+    top: 56px;
+    height: 4px;
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  #home {
+    height: 130vh;
+  }
+}
